@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/MasDeUPMStyles.css" />
     <link rel="stylesheet" href="css/commonStyles.css" />
     <script src="https://kit.fontawesome.com/d4b8af33ac.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
     <link rel="shortcut icon" href="images/institucional.png" type="image/x-icon" />
 </head>
 
@@ -75,6 +78,35 @@
     </nav>
 
     <main>
+        <!-- Reproductor de Audio (Cambia la URL del archivo de audio) -->
+        <audio controls>
+            <source src="ruta_del_audio.mp3" type="audio/mpeg">
+            Tu navegador no admite la reproducción de audio.
+        </audio>
+
+        <!-- Mapa de Google (Reemplaza con tus propios datos de ubicación) -->
+        <div id="map"></div>
+
+        <script>
+            // Función de inicialización del mapa
+            function initMap() {
+                // Coordenadas del centro del mapa
+                var center = { lat: 40.416775, lng: -3.703790 }; // Por ejemplo, Madrid
+    
+                // Opciones de configuración del mapa
+                var mapOptions = {
+                    zoom: 14, // Nivel de zoom
+                    center: center // Centro del mapa
+                };
+    
+                // Crear un nuevo mapa en el elemento con id "map"
+                var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            }
+        </script>
+    
+        <!-- Incluir la API de Google Maps -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG9v012zj4LpsRddSLtqh0UhQoGGvar_s&callback=initMap" async defer></script>
+
 
     </main>
 
@@ -169,6 +201,7 @@
     </footer>
 
 
+    <script src="js/MasDeUPM.js"></script>
 </body>
 
 </html>
