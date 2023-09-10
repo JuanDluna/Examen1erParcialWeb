@@ -7,6 +7,10 @@ body {
     padding: 0;
     position: relative;
 }
+.menuPrincipal .container ul li a{
+    padding: 5px;
+    color: white;
+}
 
 main {
     text-align: center;
@@ -15,7 +19,7 @@ main {
 
 body::before {
     content: "";
-    background-image: url('/Examen1erParcialWeb-main/images/Universidad-Politecnica-de-Madrid.jpg');
+    background-image: url('../images/Universidad-Politecnica-de-Madrid.jpg');
     background-size: cover;
     filter: blur(5px);
     opacity: 2;
