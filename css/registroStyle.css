@@ -1,6 +1,125 @@
+/* Estilos para el formulario y la imagen de fondo */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    background-image: url('/Examen1erParcialWeb-main/images/Universidad-Politecnica-de-Madrid.jpg');
+    background-size: cover;
+    filter: blur(5px);
+    opacity: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+form {
+    background-color: rgba(36, 110, 174, 0.8);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+label input:focus + label {
+    color: #2ecc71; 
+    transform: translateY(-15px); 
+    transition: all 0.3s ease; 
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+    color: #2ecc71; 
+    transform: translateY(-5px); 
+    transition: all 0.3s ease; 
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease; 
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"] {
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    outline: none; 
+}
+
+input[type="submit"] {
+    background-color: #454545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+footer {
+    margin-top: 20px;
+}
 
 
-form{
-    text-align: justify;
-    margin: 2em;
+.gender-container {
+    display: inline-flex;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.gender-container label {
+    margin-right: 30px;
+    
+}
+
+div #formulario-solicitud {
+    font-size: 25px;
+}
+
+input[type="file"]{
+    background-color: #454545;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover,
+input[type="submit"]:hover {
+    background-color: #27ae60;
 }
