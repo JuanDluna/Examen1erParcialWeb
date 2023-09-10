@@ -68,11 +68,23 @@
     font-style: italic;
 }
 
-body{margin: 0;}
+body {
+    margin: 0;
+}
 
-header , footer {
+header,
+footer {
+    width: 100%;
     font-family: 'Lato', sans-serif;
     color: white;
+}
+
+body>nav {
+    margin-inline: 30em;
+}
+
+header>div>div{
+    margin-inline: 18em;
 }
 
 /* Header */
@@ -92,7 +104,6 @@ header , footer {
 #tituloGeneral.row {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
 }
 
 .headerTituloLogo {
@@ -127,19 +138,19 @@ header , footer {
     font-size: 0.7em;
     list-style: none;
     padding: 0;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
-.row ul li::before {
-    content: " | ";
-    margin: 0px 5px 0px 5px;
+.row ul li:not(:first-child)::before {
+    content: "\0020|\0020 ";
+    /* margin: 0px 5px 0px 5px; */
     font-weight: bold;
     font-size: 1.5em;
 }
 
 .menu-row2 {
     text-align: right;
-    margin: 0px 20px 0px;
+    /* margin: 0px 20px 0px; */
 }
 
 li a {
@@ -164,17 +175,21 @@ a {
     display: flex;
     color: black;
 }
-.menuPrincipal  ul{
+
+.menuPrincipal ul {
     list-style: none;
 }
-.menuPrincipal  ul li{
+
+.menuPrincipal ul li {
     display: inline;
 }
-.menuPrincipal  ul li a{
+
+.menuPrincipal ul li a {
     padding: 5px;
     color: black;
 }
-.menuPrincipal  ul li a:hover{
+
+.menuPrincipal ul li a:hover {
     text-decoration: none;
     color: #1867b7;
 }
@@ -182,8 +197,13 @@ a {
 
 /* footer */
 
-footer{
+footer {
     bottom: 0;
+
+}
+
+footer>div>div{
+    margin-inline: 18em;
 }
 
 .UPM_Domains {
@@ -194,7 +214,7 @@ footer{
     height: 50px;
 }
 
-.UPM_Sites{
+.UPM_Sites {
     align-self: center;
     display: flex;
     justify-content: space-around;
@@ -210,14 +230,14 @@ footer{
     align-items: center
 }
 
-.socialMedia a{
-display: flex;
-justify-content: center;
-align-items: center;
-color: #1867b7;
-background-color: white;
-padding: 0.3em;
-border-radius: 50%;
+.socialMedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1867b7;
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 50%;
 }
 
 a {
@@ -234,34 +254,28 @@ a {
     height: fit-content;
 }
 
-.ContactsSponsors{
+.ContactsSponsors {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.contactList{
+.contactList {
     display: flex;
-    
+
 }
 
 .contactList ul {
-    list-style:none;
-    margin-inline: 50px;
+    list-style: none;
 }
 
-.sponsorsImages{
+.sponsorsImages {
     text-align: right;
-    margin-right: 5em;
 }
 
-.sponsorsImages a img{
-    margin-top: 1em;
-}
+
 
 #copyr {
     font-size: 2em;
     text-align: center;
     align-self: flex-end;
-}   
-
-
+}

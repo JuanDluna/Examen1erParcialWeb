@@ -37,3 +37,21 @@ showSlide(currentSlide);
 
 // Cambiar de diapositiva automáticamente cada 3 segundos
 setInterval(nextSlide, 3000);
+
+function closeChatbot() {
+    var aside = document.querySelector('aside');
+    var animation = aside.animate([
+        // keyframes
+        { transform: 'translate(0)' }, 
+        { transform: 'translate(100vw)'}
+    ], { 
+        // timing options
+        duration: 1000,
+        iterations: 1,
+        fill: 'forwards'
+    });
+
+    animation.onfinish = function() {
+        aside.style.display = 'none';
+    };
+}

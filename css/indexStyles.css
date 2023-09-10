@@ -44,8 +44,7 @@ section#novedades {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(59, 125, 238);
+    background-color: #0374DD;
 }
 
 
@@ -55,7 +54,7 @@ section#novedades {
 }
 
 .carousel-item p {
-    text-align: center;
+    text-align: left;
     font-size: 1.8vw;
     font-weight: 300;
 }
@@ -172,6 +171,7 @@ section#novedades {
 
 #noticias p {
     color: black;
+    margin-left: 0.5em;
 }
 
 @media (max-width: 768px) {
@@ -298,7 +298,6 @@ section#novedades {
     background-color: #e5e5e5;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    /* border: 1px solid black; */
 }
 
 #SectionNoticias>div {
@@ -307,8 +306,8 @@ section#novedades {
     align-content: center;
 }
 
-#SectionNoticias div:not(:first-child):not(:last-child) {
-    margin-inline: 1em;
+#SectionNoticias div:not(:first-child) {
+    margin-left: 1em;
 }
 
 #SectionNoticias img {
@@ -317,31 +316,150 @@ section#novedades {
 
 }
 
-#SectionNoticias img:hover{
+#SectionNoticias img:hover {
     transform: scale(1.2);
 }
-#SectionNoticias a>h5,#SectionNoticias p{
+
+#SectionNoticias a>h5,
+#SectionNoticias p {
     margin-inline: 1em;
 }
 
-#SectionNoticias a>h5{
+#SectionNoticias a>h5 {
     color: #00458f;
     font-weight: normal;
     font-size: 0.65em;
 }
 
-#SectionNoticias a>h5:hover{
-text-decoration: underline;
+#SectionNoticias a>h5:hover {
+    text-decoration: underline;
 }
 
-#SectionNoticias p{
+#SectionNoticias p {
     color: black;
     font-weight: normal;
     font-size: smaller;
     text-align: justify;
 }
 
+@media (max-width: 768px) {
+    #Section {
 
+        overflow: scroll;
+    }
+
+}
 
 
 /* FIN NoticiasSection */
+
+/* Eventos Section */
+
+#eventos {
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin-bottom: 1.5em;
+}
+
+.evento>a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fecha {
+    background-color: #1867b7;
+    text-align: center;
+    margin: 0.6em;
+    padding: 0.3em 0.1em;
+    /* Ajustamos el padding para controlar el espacio interior */
+}
+
+.fecha>p:nth-child(1),
+.fecha>p:nth-child(3) {
+    font-size: 0.4em;
+    margin: 0;
+}
+
+.fecha>p:nth-child(2) {
+    font-size: 1em;
+    margin: 0;
+}
+
+.infoEvento {
+    color: black;
+    font-size: 0.5em;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.calendario>span {
+    background-color: #1867b7;
+    color: white;
+    font-size: 2em;
+    padding: 0.2em;
+}
+
+.textoMasEventos>p {
+    font-size: 1em;
+    color: #1867b7;
+    font-weight: bold;
+    margin-top: 0.6em;
+    text-align: center;
+    margin-inline: 0.3em;
+}
+
+@media (max-width: 768px) {
+    #eventos {
+        overflow: scroll;
+    }
+
+}
+
+/* FIN Eventos Section */
+
+/* ChatBot */
+
+aside {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+aside>button{
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+aside span{
+    color: black;
+}
+
+aside>p {
+    transform: translateX(200%);
+    position:relative;
+    right: 2em;
+    font-size: 0.7em;
+    padding: 5px;
+    width: 120%;
+    justify-self: center;
+    border-radius: 10px;
+    background-color: #4d4c4c;
+    transition: all 0.3s ease-in;
+}
+
+aside:hover>p {
+    display: block;
+    /* Muestra el chat al hacer hover sobre el aside */
+    transform: translateX(-10%);
+}
+
+
+/* FIN ChatBot */

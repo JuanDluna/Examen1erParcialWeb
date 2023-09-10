@@ -5,14 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Universidad Politecnica de Madrid</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/d4b8af33ac.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/indexStyles.css" />
   <link rel="stylesheet" href="css/commonStyles.css" />
-  <script src="https://kit.fontawesome.com/d4b8af33ac.js" crossorigin="anonymous"></script>
 
   <link rel="shortcut icon" href="images/institucional.png" type="image/x-icon" />
 </head>
 
 <body>
+
+  <aside class="animate__animated animate__bounce">
+    <button onclick="closeChatbot()"><span class="fa-solid fa-xmark"></span></button>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger project-id="schoolarproject-398608" agent-id="ef4056a0-3fa0-44b8-9b5e-70247aabed09"
+      language-code="es">
+      <df-messenger-chat-bubble chat-title="IBUY"></df-messenger-chat-bubble>
+    </df-messenger>
+    <p>Hablar con IBUY &#128151;</p>
+  </aside>
+
+
+
+
   <header id="headerUniversidad">
     <div class="container">
       <div class="row" id="tituloGeneral">
@@ -211,7 +226,8 @@
         <a href="https://www.upm.es/?id=31683c9374d69810VgnVCM10000009c7648a____&prefmt=articulo&fmt=detail">
           <h5>Inteligencia artificial aplicada a la medicina de precisión</h5>
         </a>
-        <p>Un grupo de investigación de la Universidad Politécnica de Madrid ha desarrollado con inteligencia artificial
+        <p>Un grupo de investigación de la Universidad Politécnica de Madrid ha desarrollado con inteligencia
+          artificial
           una herramienta para clasificar variantes genómicas potencialmente malignas.</p>
       </div>
 
@@ -222,10 +238,93 @@
         </a>
         <p>Las titulaciones que han tenido la nota de corte más alta han sido: Ingeniero/a Industrial (Programa
           Académico con Recorrido Sucesivo, PARS) con un 13,237, el doble grado en Ingeniería en Diseño Industrial y
-          Desarrollo del Producto de Ingeniería Mecánica con un 13,056, Ingeniero/a Biomédico/a (PARS) con un 13,048, el
+          Desarrollo del Producto de Ingeniería Mecánica con un 13,056, Ingeniero/a Biomédico/a (PARS) con un 13,048,
+          el
           grado de Biotecnología con un 13,023 e Ingeniero/a Aeronáutico/a (PARS) con un 13,007.</p>
       </div>
 
+    </section>
+
+    <section id="eventos">
+      <div class="evento">
+        <a href="https://eventos.upm.es/89352/detail/principales-riesgos-naturales-y-su-afeccion-a-la-sociedad.html">
+          <div class="fecha">
+            <p>LUNES</p>
+            <p>11</p>
+            <p>SEPTIEMBRE</p>
+          </div>
+          <div class="infoEvento">
+            <p>Principales riesgos naturales y su afección a la sociedad</p>
+          </div>
+
+        </a>
+      </div>
+      <div class="evento">
+        <a
+          href="https://eventos.upm.es/102716/detail/etsidi-py-taller-python-de-programacion-practica-y-divertida-3a-edicion.html">
+          <div class="fecha">
+            <p>LUNES</p>
+            <p>11</p>
+            <p>SEPTIEMBRE</p>
+          </div>
+          <div class="infoEvento">
+            <p>Taller Python de programación práctica y divertida</p>
+          </div>
+        </a>
+      </div>
+      <div class="evento">
+        <a
+          href="https://eventos.upm.es/102742/detail/lla-industria-vitivinicola-chilena-situacion-actual-sostenibilidad-e-innovacion-para-el-siglo-xxir.html">
+          <div class="fecha">
+            <p>LUNES</p>
+            <p>11</p>
+            <p>SEPTIEMBRE</p>
+          </div>
+          <div class="infoEvento">
+            <p>'La industria vitivinícola chilena, situación actual, sostenibilidad e innovación para el siglo XXI'
+            </p>
+          </div>
+
+        </a>
+      </div>
+      <div class="evento">
+        <a
+          href="https://eventos.upm.es/103030/detail/charla-informativa-sobre-la-cyberleague-gc-2023-v-liga-de-retos-en-el-ciberespacio.html">
+          <div class="fecha">
+            <p>MIÉRCOLES</p>
+            <p>13</p>
+            <p>SEPTIEMBRE</p>
+          </div>
+          <div class="infoEvento">
+            <p>Charla informativa sobre la "Cyberleague GC 2023 v Liga de retos en el Ciberespacio"</p>
+          </div>
+
+        </a>
+      </div>
+      <div class="evento">
+        <a
+          href="https://eventos.upm.es/102125/detail/desafios-de-la-futura-regulacion-del-sector-de-las-telecomunicaciones-y-su-sostenibilidad.html">
+          <div class="fecha">
+            <p>MIÉRCOLES</p>
+            <p>13</p>
+            <p>SEPTIEMBRE</p>
+          </div>
+          <div class="infoEvento">
+            <p>"Desafíos de la futura regulación del sector de las telecomunicaciones y su sostenibilidad.</p>
+          </div>
+
+        </a>
+      </div>
+      <div class="evento">
+        <a href="http://eventos.upm.es/">
+          <div class="calendario">
+            <span class="fa-solid fa-calendar-days"></span>
+          </div>
+          <div class="textoMasEventos">
+            <p>+<br>Eventos</p>
+          </div>
+        </a>
+      </div>
     </section>
 
   </main>
@@ -320,6 +419,6 @@
   </footer>
 
   <script src="js/index.js"></script>
-</body>
+
 
 </html>
