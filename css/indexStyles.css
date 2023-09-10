@@ -4,6 +4,17 @@ body {
     color: white;
 }
 
+section{
+    margin-inline: 15em;
+}
+
+
+@media (max-width: 768px) {
+    section{
+        margin-inline: 0;
+    }
+}
+
 section#novedades {
     display: flex;
     justify-content: center;
@@ -14,7 +25,8 @@ section#novedades {
 
 /* CARRUSEL RONY  */
 .carousel {
-    width: 42%;
+    width: 60%;
+    height: fit-content;
     margin: 0.3em;
 }
 
@@ -93,6 +105,27 @@ section#novedades {
     /* Cambia el color a blanco para las flechas */
 }
 
+@media (max-width: 768px) {
+    .carousel {
+        width: 50%;
+    }
+
+    .carousel-control-container {
+        max-width: 50%;
+    }
+
+    .carousel-indicators-container {
+        display: none;
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 576px) {
+    .carousel {
+        width: 100%;
+    }
+}
+
 /* FIN CARRUSEL RONY */
 
 /* Novedades */
@@ -101,13 +134,13 @@ section#novedades {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 40%;
 }
 
 #noticias>div {
     background-color: #dbe0f0;
-    margin: 0.1em 0.1em 0;
-    padding: 6px;
-    padding-right: 20px;
+    margin-bottom:0.1em;
+    padding-block: 6px;
 }
 
 #noticias a span {
@@ -133,40 +166,93 @@ section#novedades {
     color: black;
 }
 
+@media (max-width: 768px) {
+    #noticias>div {
+        padding-right: 10px;
+        /* Reduce el espacio a la derecha para ajustar contenido */
+    }
+
+    #noticias h2,
+    #noticias p {
+        font-size: 0.65rem;
+        /* Reduzca el tamaño de fuente para encabezados en pantallas muy pequeñas */
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 576px) {
+    #noticias>div {
+        padding-right: 5px;
+        /* Reduzca aún más el espacio a la derecha */
+    }
+
+    #noticias h2,
+    #noticias p {
+        font-size: 0.35rem;
+        /* Reduzca el tamaño de fuente para encabezados en pantallas muy pequeñas */
+        padding: 0;
+        margin: 0;
+    }
+}
+
 /* Fin novedades */
 
 /* Tips */
 
 #tips {
     display: flex;
-    justify-content: center;
+
 }
 
+
+
 #tips div {
+    flex-grow: 1; 
     display: inline-flex;
     background-color: #e5e5e5;
+    padding-inline: 1.2em;
+    justify-content: space-between;
     /* border: 1px solid black; */
-    padding-left: 10px;
 }
 
 #tips>div>h5 {
-    color: black;
+    color: rgb(100, 100, 100);
     font-size: 1vw;
     font-weight: 500;
- 
+    text-align: left;
+
+
 }
 
-#tips>div>h5:hover{
-text-decoration: underline;
-    
+#tips>div>img {
+    text-align: right;
+    height: 100%;
+
+}
+
+#tips>div>h5:hover {
+    text-decoration: underline;
 }
 
 #tips .vertical-line {
-    width: 2px;
+    width: 0.15em;
     height: 100%;
     background-color: #B0ADAD;
 }
 
 
-
 /* Fin tips */
+
+/* NoticiasSection */
+
+#SectionNoticias{
+    display: flex;
+    background-color: #e5e5e5;
+    border: 1px solid black;
+}
+
+
+/* FIN NoticiasSection */
