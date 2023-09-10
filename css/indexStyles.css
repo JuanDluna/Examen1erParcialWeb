@@ -4,111 +4,117 @@ body {
     color: white;
 }
 
-#novedades .container .row {
-    display: flex;
-}
-
-/* CARRUSEL RONY  */
-.carousel-container {
-    position: relative;
-    width: 50%;
-    margin: 0 auto; /* Centrar el carrusel horizontalmente */
-    overflow: hidden;
-}
-
-/* Estilo para los rectángulos */
-.carousel-item-container {
-    display: flex;
-    transition: transform 0.5s ease; /* Transición suave de transformación (traslación) */
-}
-
-.carousel-item {
+section#novedades {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+
+/* CARRUSEL RONY  */
+.carousel {
+    width: 42%;
+    margin: 0.3em;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
     flex: 0 0 100%;
-    width: 50%; /* Ancho igual al del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(59, 125, 238);
 }
 
-.carousel-item img{
-    max-width: 75%;
+
+.carousel-item img {
+    width: 70%;
     height: 100%;
-}.carousel-item p{
-    font-size: 2em;
-    width: 25%;
-    max-width: 50%;
-    font-weight: 300;
 }
+
+.carousel-item p {
+    text-align: center;
+    font-size: 1.8vw;
+
+}
+
 /* Estilo para los indicadores de navegación */
 .carousel-indicators-container {
-    position: absolute;
-    bottom: 5%;
-    right: 10%; /* Centra los indicadores horizontalmente */
-    max-width: 50%;
     display: flex;
     align-items: center;
-    z-index: 2; /* Asegura que estén sobre el contenido */
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    max-width: 25%;
+    min-width: 5%;
+
+
 }
 
 .carousel-indicator {
     width: 10px;
     height: 10px;
-    background-color: transparent; 
-    border: 1px solid #fff; 
+    background-color: transparent;
+    border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
-    margin: 0 4px 4px 0px; 
+    margin: 0 4px 4px 0px;
 }
 
 /* Estilo para el indicador activo */
 .carousel-indicator.active {
-    background-color: #fff; /* Cambia el fondo a blanco para el indicador activo */
+    background-color: #fff;
+    /* Cambia el fondo a blanco para el indicador activo */
 }
 
 /* Estilo para las flechas de navegación */
 .carousel-control-container {
     position: absolute;
     bottom: 3%;
-    right: 0; 
+    right: 0;
     display: flex;
-    align-items: center;
 }
 
 .carousel-control {
     font-size: 30px;
     cursor: pointer;
     margin: 0 10px;
-    color: #fff; /* Cambia el color a blanco para las flechas */
+    color: #fff;
+    /* Cambia el color a blanco para las flechas */
 }
+
 /* FIN CARRUSEL RONY */
 
+/* Novedades */
 
 #noticias {
-
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 33.3333333333%;
-    flex-wrap: nowrap;
-    
-
+    justify-content: center;
 }
 
-#noticias .col-el1,
-.col-el2,
-.col-el3 {
-
-    padding: 10px 0px 10px 10px;
+#noticias>div {
     background-color: #dbe0f0;
-
+    margin: 0.1em 0.1em 0;
+    padding: 6px;
+    padding-right: 20px;
 }
 
 #noticias a span {
     float: left;
     margin-top: 1.125em;
     margin-right: .5em;
-    font-size: .9em;
+    font-size: .7em;
 }
 
 #noticias h2::before {
@@ -121,81 +127,47 @@ body {
 
     font-size: medium;
     color: #00458f;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
 }
 
 #noticias p {
     color: black;
-    margin-top: 5px;
-    padding-top: 0px;
-    padding-left: 16px;
-}
-#tips .container {
-    width: 100%;
-    max-width: 89.2%;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 15px;
 }
 
-#tips .row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px; /* Espacio entre columnas */
-    background-color: #e5e5e5;
-}
-.col-tips a {
-    color: #474747;
-    white-space: nowrap; /* Evita el salto de línea */
-    line-height: 1 !important;
-    margin-top: 0; /* Elimina el margen superior predeterminado */
-    font-size: 16.8px; /* Tamaño de fuente */
-}
-.enlace a{
-    font-size: 16.8px;
-}
-.enlace a:hover{
+/* Fin novedades */
 
-    text-decoration: underline;
-}
-.col-tips {
+/* Tips */
+
+#tips {
     display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    justify-content: center;
+}
+
+#tips div {
+    display: inline-flex;
+    background-color: #e5e5e5;
+    border: 1px solid black;
+}
+
+#tips>div>h5 {
+    color: black;
+    font-size: 1vw;
+    font-weight: 500;align-self: flex-start;
+}
+
+#tips>div>h5:hover{
+text-decoration: underline;
+    
+}
+
+#tips span{
     height: 100px;
-    padding-left: 5px;
-}
-
-.col-tips .enlace {
-    flex: 1;
-}
-
-.col-tips .img {
-    margin-left: 20px; 
-    flex: 1;
-}
-
-#tips .img img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
-.col-tips a {
-    color: #474747;
-}
-.linea-separadora {
-    width: 1px; 
-    height: 95%; 
-    background-color: #B0ADAD; 
-    margin-left: 10px; 
-    margin-right: 10px; 
+    width: 2px;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    background: none repeat scroll 0% 0% #B0ADAD;
 }
 
 
 
-
-
-
+/* Fin tips */

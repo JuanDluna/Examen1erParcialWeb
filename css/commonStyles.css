@@ -159,22 +159,22 @@ a {
 
 /* nav */
 
-.menuPrincipal .container{
-    font-size: 1em;
+.menuPrincipal {
+    font-size: 0.6em;
     display: flex;
     color: black;
 }
-.menuPrincipal .container ul{
+.menuPrincipal  ul{
     list-style: none;
 }
-.menuPrincipal .container ul li{
+.menuPrincipal  ul li{
     display: inline;
 }
-.menuPrincipal .container ul li a{
+.menuPrincipal  ul li a{
     padding: 5px;
     color: black;
 }
-.menuPrincipal .container ul li a:hover{
+.menuPrincipal  ul li a:hover{
     text-decoration: none;
     color: #1867b7;
 }
