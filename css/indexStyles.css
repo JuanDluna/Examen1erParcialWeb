@@ -145,13 +145,15 @@ section#novedades {
 #tips div {
     display: inline-flex;
     background-color: #e5e5e5;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding-left: 10px;
 }
 
 #tips>div>h5 {
     color: black;
     font-size: 1vw;
-    font-weight: 500;align-self: flex-start;
+    font-weight: 500;
+ 
 }
 
 #tips>div>h5:hover{
@@ -159,13 +161,10 @@ text-decoration: underline;
     
 }
 
-#tips span{
-    height: 100px;
+#tips .vertical-line {
     width: 2px;
-    position: absolute;
-    top: 8px;
-    right: 0px;
-    background: none repeat scroll 0% 0% #B0ADAD;
+    height: 100%;
+    background-color: #B0ADAD;
 }
 
 
