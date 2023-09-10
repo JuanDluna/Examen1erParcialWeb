@@ -78,35 +78,145 @@
     </nav>
 
     <main>
+        <h1>Más de la UPM</h1>
+        <h2>Indice</h2>
+        <section id="indice">
+            <a href="#ubicacion" style="color: rgb(12, 67, 186);"> -Ubicacion</a><br>
+            <a href="#oferta" style="color: rgb(12, 67, 186);"> -Oferta</a><br>
+            <a href="#investigacion" style="color: rgb(12, 67, 186);"> -Investigacion</a><br>
+            <a href="#video" style="color: rgb(12, 67, 186);"> -Video</a><br>
+            <a href="#tabla" style="color: rgb(12, 67, 186);"> -Tabla</a><br>
+            <a href="#audio" style="color: rgb(12, 67, 186);"> -Audio</a><br>
+            <a href="#mapa" style="color: rgb(12, 67, 186);"> -Mapa</a><br>
+            <a href="#pie" style="color: rgb(12, 67, 186);"> -Ir al final</a>
+
+        </section>
+        
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>La UPM tiene su sede principal en Madrid, la capital de España, con varios campus distribuidos en toda la ciudad. Su ubicación estratégica permite a los estudiantes acceder fácilmente a una amplia gama de recursos culturales y profesionales.</p>
+        </section>
+        
+        <section id="oferta">
+            <h2>Oferta Académica</h2>
+            <p>La UPM ofrece una amplia variedad de programas académicos en diversas disciplinas, incluyendo ingeniería, arquitectura, ciencias, tecnología y humanidades. Algunos de sus programas más destacados incluyen:</p>
+            <ul>
+                <li>Ingeniería Informática</li>
+                <li>Arquitectura</li>
+                <li>Ciencias Ambientales</li>
+                <li>Ciencias de Datos</li>
+                <li>Telecomunicaciones</li>
+                <li>Biomedicina</li>
+            </ul>
+        </section>
+        
+        <section id="investigacion">
+            <h2>Investigación y Innovación</h2>
+            <p>La UPM se ha destacado en el ámbito de la investigación y la innovación, colaborando estrechamente con la industria y otras instituciones académicas. Sus investigadores han contribuido significativamente a diversos campos, desde la sostenibilidad hasta la inteligencia artificial.</p>
+        </section>
+    
+        <!-- Enlace a un video de YouTube -->
+        <center><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KaoocYkEvfU?si=AwOaDml7rWoDEaF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p style="color: #1867b7">¿Porque estudiar en la UPM?</p></center>
+    
+        <!-- Tabla de comparación de universidades -->
+        <p>A continuacion te mostramos una comparativa que hay en España con respecto a nuestra Universidad</p>
+        <table border="1" id="tabla">
+            <tr>
+                <th rowspan="2">Universidad</th>
+                <th rowspan="2">Ubicación</th>
+                <th rowspan="2">Programas Destacados</th>
+                <th colspan="2">Ranking Nacional</th>
+            </tr>
+            <tr>
+                <th>General</th>
+                <th>Especialidad</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Universidad Politécnica de Madrid (UPM)</td>
+                <td rowspan="2">Madrid</td>
+                <td rowspan="2">Ingeniería, Ciencias, Arquitectura</td>
+                <td>#1</td>
+                <td>Engineering</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>Universidad Complutense de Madrid</td>
+                <td>Madrid</td>
+                <td>Humanidades, Ciencias Sociales, Ciencias Exactas</td>
+                <td>#2</td>
+                <td>Humanities</td>
+            </tr>
+            <tr>
+                <td>Universidad de Barcelona</td>
+                <td>Barcelona</td>
+                <td>Medicina, Economía, Ciencias Sociales</td>
+                <td>#3</td>
+                <td>Medicine</td>
+            </tr>
+            <tr>
+                <td>Universidad Autónoma de Madrid</td>
+                <td>Madrid</td>
+                <td>Ciencias, Ciencias Sociales, Humanidades</td>
+                <td>#4</td>
+                <td>Sciences</td>
+            </tr>
+            <tr>
+                <td>Universidad de Granada</td>
+                <td>Granada</td>
+                <td>Ciencias de la Salud, Ciencias Sociales, Humanidades</td>
+                <td>#5</td>
+                <td>Health Sciences</td>
+            </tr>
+            <tr>
+                <td>Universidad de Valencia</td>
+                <td>Valencia</td>
+                <td>Ciencias, Ingeniería, Ciencias Sociales</td>
+                <td>#6</td>
+                <td>Engineering</td>
+            </tr>
+            <tr>
+                <td>Universidad de Sevilla</td>
+                <td>Sevilla</td>
+                <td>Ingeniería, Ciencias Sociales, Ciencias Exactas</td>
+                <td>#7</td>
+                <td>Engineering</td>
+            </tr>
+        </table>
+        
+        
+        <br><br><br><br>
+        
+    
         <!-- Reproductor de Audio (Cambia la URL del archivo de audio) -->
-        <audio controls>
-            <source src="ruta_del_audio.mp3" type="audio/mpeg">
+        <center><p>Himno de Nuestra Universidad Politecnica de Madrid</p>
+        <audio controls id="audio">
+            <source src="../Examen1erParcialWeb/media/cancion_UPM.mp3" type="audio/mpeg">
             Tu navegador no admite la reproducción de audio.
-        </audio>
-
-        <!-- Mapa de Google (Reemplaza con tus propios datos de ubicación) -->
-        <div id="map"></div>
-
-        <script>
-            // Función de inicialización del mapa
-            function initMap() {
-                // Coordenadas del centro del mapa
-                var center = { lat: 40.416775, lng: -3.703790 }; // Por ejemplo, Madrid
+        </audio></center>
+        
     
-                // Opciones de configuración del mapa
-                var mapOptions = {
-                    zoom: 14, // Nivel de zoom
-                    center: center // Centro del mapa
-                };
+        <!-- Agrega esta sección después del último elemento en tu main -->
+        <br><br>
+        <section id="mapa">
+            <h2>Ubicación en Google Maps</h2>
+            <p>Haz clic en la imagen para ver la ubicación de la Universidad Politécnica de Madrid en Google Maps:</p>
     
-                // Crear un nuevo mapa en el elemento con id "map"
-                var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-            }
-        </script>
+            <!-- Imagen enlazada a Google Maps -->
+            <a href="https://goo.gl/maps/8nHyhREpoNs2E8pb7" target="_blank">
+                <center><img src="../Examen1erParcialWeb/images/Mapa.jpeg" alt="UPM en Google Maps" width="500" height="400"></center>
+            </a>
+        </section>
 
-
-
+        <section id="pie">
+            <a href="#indice" style="color: rgb(12, 67, 186);"> -Volver al inicio</a>
+        </section>
+    
     </main>
+    
 
 
     <footer>

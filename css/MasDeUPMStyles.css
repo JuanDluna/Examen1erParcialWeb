@@ -1,11 +1,89 @@
-#gmp-map {
-    height: 100%;
-}
+/* Estilo general para el main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para los títulos */
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  /* Estilo para los párrafos */
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para la lista desordenada */
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Estilos para la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #1867b7;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color: #1867b7;
+  }
+  
+  /* Estilo para el reproductor de audio */
+  audio {
+    width: 50%;
+    padding: 1px;
+    font-family: 'Times New Roman', serif;
+    font-size: 2px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Estilos para la sección de Google Maps */
+  section:last-child {
+    margin-top: 30px;
+  }
+  
+  /* Estilo para la imagen de Google Maps */
+  section:last-child img {
+    max-width: 100%;
+  }
 
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  
+  
+.menuPrincipal .container .listaMenu{
+    
+        font-family: 'Lato', sans-serif;
+        margin: 2em;
+        color: white;
+        font-size: 11px;
+    
 }
+  
+  
