@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+main h1 , main>form , main>#tabla-info{
+    margin-inline: 18em;
+}
+
 .titulo {
     font-size: 0.6em;
     background-color: #1867b7;
@@ -10,7 +14,6 @@ body {
 }
 
 .titulo h1 {
-    margin-left: 5%;
 }
 
 .titulo h1::before {
@@ -61,4 +64,28 @@ select {
 #tabla-info td {
 
     border: 1px solid black;
+}
+
+#tabla-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla */
+#tabla-info th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #1867b7;
+    color: white;
+    font-weight: bold;
+}
+
+#tabla-info td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color: #1867b7;
 }

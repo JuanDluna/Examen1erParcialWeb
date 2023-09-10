@@ -279,3 +279,44 @@ a {
     text-align: center;
     align-self: flex-end;
 }
+
+/* ChatBot */
+
+aside {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+aside>button{
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+aside span{
+    color: black;
+}
+
+aside>p {
+    transform: translateX(200%);
+    position:relative;
+    right: 2em;
+    font-size: 0.7em;
+    padding: 5px;
+    width: 120%;
+    justify-self: center;
+    border-radius: 10px;
+    background-color: #4d4c4c;
+    transition: all 0.3s ease-in;
+}
+
+aside:hover>p {
+    display: block;
+    /* Muestra el chat al hacer hover sobre el aside */
+    transform: translateX(-10%);
+}
+
+
+/* FIN ChatBot */

@@ -13,6 +13,17 @@
 
 <body>
 
+    <aside class="animate__animated animate__bounce">
+        <button onclick="closeChatbot()"><span class="fa-solid fa-xmark"></span></button>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+        <df-messenger project-id="schoolarproject-398608" agent-id="ef4056a0-3fa0-44b8-9b5e-70247aabed09"
+            language-code="es">
+            <df-messenger-chat-bubble chat-title="IBUY"></df-messenger-chat-bubble>
+        </df-messenger>
+        <p>Hablar con IBUY &#128151;</p>
+    </aside>
+
+
     <header id="headerUniversidad">
         <div class="container">
             <div class="row" id="tituloGeneral">
@@ -191,6 +202,24 @@
         </div>
 
     </footer>
+
+    <script>function closeChatbot() {
+        var aside = document.querySelector('aside');
+        var animation = aside.animate([
+            // keyframes
+            { transform: 'translate(0)' }, 
+            { transform: 'translate(100vw)'}
+        ], { 
+            // timing options
+            duration: 1000,
+            iterations: 1,
+            fill: 'forwards'
+        });
+    
+        animation.onfinish = function() {
+            aside.style.display = 'none';
+        };
+    }</script>
 
 </body>
 

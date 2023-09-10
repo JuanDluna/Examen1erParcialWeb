@@ -1,25 +1,39 @@
-#collage img {
+
+#indice a{
+    color: rgb(12, 67, 186);
+    font-size: 1.4em;
+}
+
+#collage{
+    width: 100%;
+}
+.table {
+    background-color: transparent;
+    border-collapse: collapse;
+    width: fit-content;
+}
+
+
+.table td {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 10vw;
+}
+
+.table img{
     margin: 0;
     border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
-/* Establece un tamaño fijo para todas las imágenes */
-.collage-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0; 
-}
-
-.collage-container img {
-    width: calc(33.33% - 0.667rem); 
-    height: auto;
-}
-
-/* Agrega una animación de zoom al pasar el cursor sobre las imágenes */
-.collage-container img:hover {
-    transform: scale(1.1); 
+.table img:hover {
+    transform: scale(1.1);
     transition: transform 0.5s ease;
 }
+
 
 /* Resto de tus estilos CSS existentes para el main */
 main {
@@ -34,6 +48,7 @@ main {
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+
 /* Agrega un pseudo-elemento ::before para la imagen de fondo */
 main::before {
     content: "";
@@ -44,14 +59,15 @@ main::before {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(5px); 
-    opacity: 0.8; 
-    z-index: -1; 
+    filter: blur(5px);
+    opacity: 0.8;
+    z-index: -1;
 }
 
 /* Estilos para los títulos */
-h1, h2 {
-    color: black; 
+h1,
+h2 {
+    color: black;
 }
 
 /* Agrega una transición suave a los títulos h2 */
@@ -73,11 +89,6 @@ p {
     line-height: 1.5;
 }
 
-/* Estilos para los enlaces */
-a {
-    color: rgb(12, 67, 186); 
-}
-
 /* Estilos para la lista desordenada */
 ul {
     list-style: disc;
@@ -85,14 +96,14 @@ ul {
 }
 
 /* Estilos para la tabla */
-table {
+#tabla table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
 /* Estilos para las celdas de la tabla */
-th {
+#tabla th {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -101,7 +112,7 @@ th {
     font-weight: bold;
 }
 
-td {
+#tabla td {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -131,7 +142,6 @@ section:last-child img {
 
 .menuPrincipal .container .listaMenu {
     font-family: 'Lato', sans-serif;
-    margin: 2em;
     color: white;
     font-size: 11px;
 }

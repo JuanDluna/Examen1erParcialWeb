@@ -230,7 +230,7 @@ function mostrarInformacionCarrera() {
         for (const propiedad in datosCarrera) {
             if (datosCarrera.hasOwnProperty(propiedad)) {
                 const fila = document.createElement('tr');
-                const celdaPropiedad = document.createElement('td');
+                const celdaPropiedad = document.createElement('th');
                 const celdaValor = document.createElement('td');
                 console.log(propiedad);
                 celdaPropiedad.textContent = propiedad;
@@ -250,3 +250,21 @@ function mostrarInformacionCarrera() {
 
 // Inicialmente, cargar las opciones para el primer campus
 actualizarCarreras();
+
+function closeChatbot() {
+    var aside = document.querySelector('aside');
+    var animation = aside.animate([
+        // keyframes
+        { transform: 'translate(0)' }, 
+        { transform: 'translate(100vw)'}
+    ], { 
+        // timing options
+        duration: 1000,
+        iterations: 1,
+        fill: 'forwards'
+    });
+
+    animation.onfinish = function() {
+        aside.style.display = 'none';
+    };
+}

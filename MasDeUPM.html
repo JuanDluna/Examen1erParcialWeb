@@ -16,6 +16,17 @@
 
 <body>
 
+    <aside class="animate__animated animate__bounce">
+        <button onclick="closeChatbot()"><span class="fa-solid fa-xmark"></span></button>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+        <df-messenger project-id="schoolarproject-398608" agent-id="ef4056a0-3fa0-44b8-9b5e-70247aabed09"
+            language-code="es">
+            <df-messenger-chat-bubble chat-title="IBUY"></df-messenger-chat-bubble>
+        </df-messenger>
+        <p>Hablar con IBUY &#128151;</p>
+    </aside>
+
+
     <header id="headerUniversidad">
         <div class="container">
             <div class="row" id="tituloGeneral">
@@ -79,46 +90,73 @@
 
     <main>
         <h1>Más de la UPM</h1>
-        <h2>Indice</h2>
+
         <section id="indice">
-            <a href="#ubicacion" style="color: rgb(12, 67, 186);"> -Ubicacion</a><br>
-            <a href="#oferta" style="color: rgb(12, 67, 186);"> -Oferta</a><br>
-            <a href="#investigacion" style="color: rgb(12, 67, 186);"> -Investigacion</a><br>
-            <a href="#video" style="color: rgb(12, 67, 186);"> -Video</a><br>
-            <a href="#tabla" style="color: rgb(12, 67, 186);"> -Tabla</a><br>
-            <a href="#audio" style="color: rgb(12, 67, 186);"> -Audio</a><br>
-            <a href="#mapa" style="color: rgb(12, 67, 186);"> -Mapa</a><br>
-            <a href="#pie" style="color: rgb(12, 67, 186);"> -Ir al final</a>
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#audio"> Audio</a></li>
+                <li><a href="#ubicacion"> Ubicacion</a></li>
+                <li><a href="#oferta"> Oferta</a></li>
+                <li><a href="#investigacion"> Investigacion</a></li>
+                <li><a href="#video"> Video</a></li>
+                <li><a href="#tabla"> Tabla</a></li>
+                <li><a href="#mapa"> Mapa</a></li>
+                <li><a href="#pie"> Ir al final</a></li>
+            </ul>
+        </section>
 
-                <section id="collage">
-                    <h2>Collage de Imágenes</h2>
-                    <div class="collage-container">
-                        <img src="../Examen1erParcialWeb/images/collage1.jpg" alt="Imagen 1">
-                        <img src="../Examen1erParcialWeb/images/collage10.jpg" alt="Imagen 2">
-                        <img src="../Examen1erParcialWeb/images/collage2.jpg" alt="Imagen 3">
-                        <img src="../Examen1erParcialWeb/images/collage3.jpg" alt="Imagen 4">
-                        <img src="../Examen1erParcialWeb/images/collage4.jpg" alt="Imagen 5">
-                        <img src="../Examen1erParcialWeb/images/collage5.jpg" alt="Imagen 6">
-                        <img src="../Examen1erParcialWeb/images/collage7.jpg" alt="Imagen 7">
-                        <img src="../Examen1erParcialWeb/images/collage6.jpg" alt="Imagen 8">
-                        <img src="../Examen1erParcialWeb/images/collage9.jpg" alt="Imagen 9">
-                        <img src="../Examen1erParcialWeb/images/collage8.jpg" alt="Imagen 11">
-                        <img src="../Examen1erParcialWeb/images/collage11.jpg" alt="Imagen 11">
-                        <img src="../Examen1erParcialWeb/images/collage12.jpg" alt="Imagen 11">
-                    </div>
-                </section>
-            
+        <!-- Reproductor de Audio (Cambia la URL del archivo de audio) -->
+        <center>
+            <h2>Himno de Nuestra Universidad Politecnica de Madrid</h2>
+            <audio controls id="audio">
+                <source src="media/cancion_UPM.mp3" type="audio/mpeg">
+                Tu navegador no admite la reproducción de audio.
+            </audio>
+        </center>
 
-        
+        <section id="collage">
+            <center>
+                <h2>Lo mejor de la UPM</h2>
+            </center>
+            <table class="table">
+                <tr>
+                    <td colspan="3" rowspan="2" style="height: 100%;"><img src="images/collage2.jpg" alt="Imagen 3">
+                    </td>
+                    <td><img src="images/collage3.jpg" alt="Imagen 3"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/collage10.jpg" alt="Imagen 2" style="vertical-align: bottom;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 100%;"><img src="images/collage1.jpg" alt=""></td>
+                    <td rowspan="2" colspan="2" style="height: 100%;"><img src="images/collage4.jpg" alt="Imagen 5">
+                    </td>
+                    <td style="height: 100%;"><img src="images/collage7.jpg" alt="Imagen 7"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/collage8.jpg" alt="Imagen 10"></td>
+                    <td><img src="images/collage9.jpg" alt="Imagen 9"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="height: 100%;"><img src="images/collage12.jpg" alt="Imagen 12"></td>
+                </tr>
+            </table>
+        </section>
+
+
+
 
         <section id="ubicacion">
             <h2>Ubicación</h2>
-            <p>La UPM tiene su sede principal en Madrid, la capital de España, con varios campus distribuidos en toda la ciudad. Su ubicación estratégica permite a los estudiantes acceder fácilmente a una amplia gama de recursos culturales y profesionales.</p>
+            <p>La UPM tiene su sede principal en Madrid, la capital de España, con varios campus distribuidos en toda la
+                ciudad. Su ubicación estratégica permite a los estudiantes acceder fácilmente a una amplia gama de
+                recursos culturales y profesionales.</p>
         </section>
-        
+
         <section id="oferta">
             <h2>Oferta Académica</h2>
-            <p>La UPM ofrece una amplia variedad de programas académicos en diversas disciplinas, incluyendo ingeniería, arquitectura, ciencias, tecnología y humanidades. Algunos de sus programas más destacados incluyen:</p>
+            <p>La UPM ofrece una amplia variedad de programas académicos en diversas disciplinas, incluyendo ingeniería,
+                arquitectura, ciencias, tecnología y humanidades. Algunos de sus programas más destacados incluyen:</p>
             <ul>
                 <li>Ingeniería Informática</li>
                 <li>Arquitectura</li>
@@ -128,15 +166,24 @@
                 <li>Biomedicina</li>
             </ul>
         </section>
-        
+
         <section id="investigacion">
             <h2>Investigación y Innovación</h2>
-            <p>La UPM se ha destacado en el ámbito de la investigación y la innovación, colaborando estrechamente con la industria y otras instituciones académicas. Sus investigadores han contribuido significativamente a diversos campos, desde la sostenibilidad hasta la inteligencia artificial.</p>
+            <p>La UPM se ha destacado en el ámbito de la investigación y la innovación, colaborando estrechamente con la
+                industria y otras instituciones académicas. Sus investigadores han contribuido significativamente a
+                diversos campos, desde la sostenibilidad hasta la inteligencia artificial.</p>
         </section>
-    
+
         <!-- Enlace a un video de YouTube -->
-        <center><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KaoocYkEvfU?si=AwOaDml7rWoDEaF1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p style="color: #1867b7">¿Porque estudiar en la UPM?</p></center>
-    
+        <center> <!-- Etiqueta para centrar el contenido-->
+            <iframe id="video" width="560" height="315"
+                src="https://www.youtube.com/embed/KaoocYkEvfU?si=AwOaDml7rWoDEaF1" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p style="color: #1867b7">¿Porque estudiar en la UPM?</p>
+        </center>
+
         <!-- Tabla de comparación de universidades -->
         <p>A continuacion te mostramos una comparativa que hay en España con respecto a nuestra Universidad</p>
         <table border="1" id="tabla">
@@ -154,11 +201,10 @@
                 <td rowspan="2">Universidad Politécnica de Madrid (UPM)</td>
                 <td rowspan="2">Madrid</td>
                 <td rowspan="2">Ingeniería, Ciencias, Arquitectura</td>
-                <td>#1</td>
+                <td rowspan="2">#1</td>
                 <td>Engineering</td>
             </tr>
             <tr>
-                <td></td>
                 <td>Computer Science</td>
             </tr>
             <tr>
@@ -204,25 +250,11 @@
                 <td>Engineering</td>
             </tr>
         </table>
-        
-        
-        <br><br><br><br>
-        
-    
-        <!-- Reproductor de Audio (Cambia la URL del archivo de audio) -->
-        <center><h2>Himno de Nuestra Universidad Politecnica de Madrid</h2>
-        <audio controls id="audio" autoplay>
-            <source src="media/cancion_UPM.mp3" type="audio/mpeg">
-            Tu navegador no admite la reproducción de audio.
-        </audio></center>
-        
-    
-        <!-- Agrega esta sección después del último elemento en tu main -->
-        <br><br>
+
         <section id="mapa">
             <h2>Ubicación en Google Maps</h2>
             <p>Haz clic en la imagen para ver la ubicación de la Universidad Politécnica de Madrid en Google Maps:</p>
-    
+
             <!-- Imagen enlazada a Google Maps -->
             <a href="https://goo.gl/maps/8nHyhREpoNs2E8pb7" target="_blank">
                 <center><img src="images/Mapa.jpeg" alt="UPM en Google Maps" width="500" height="400"></center>
@@ -232,9 +264,9 @@
         <section id="pie">
             <a href="#indice" style="color: rgb(12, 67, 186);"> -Volver al inicio</a>
         </section>
-    
+
     </main>
-    
+
 
 
     <footer>
@@ -326,8 +358,27 @@
         </div>
     </footer>
 
+    <script>
+        function closeChatbot() {
+            var aside = document.querySelector('aside');
+            var animation = aside.animate([
+                // keyframes
+                { transform: 'translate(0)' },
+                { transform: 'translate(100vw)' }
+            ], {
+                // timing options
+                duration: 1000,
+                iterations: 1,
+                fill: 'forwards'
+            });
 
-    <script src="js/MasDeUPM.js"></script>
+            animation.onfinish = function () {
+                aside.style.display = 'none';
+            };
+        }
+    </script>
+
+
 </body>
 
 </html>
