@@ -22,6 +22,20 @@ section#novedades {
 
 }
 
+.titulo-universidad{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: slideInRight;
+    animation-duration: 2s; 
+}
+.menu-titles{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: fadeInLeft;
+    animation-duration: 2s; 
+}
 
 /* CARRUSEL RONY  */
 .carousel {
