@@ -48,150 +48,211 @@ const carrerasPorCampus = {
 const informacionCarreras = {
     'E.T.S. de Arquitectura': {
         Nombre: 'E.T.S. de Arquitectura',
+        Descripcion: 'Escuela de Arquitectura especializada en diseño y planificación de edificios.',
         Duracion: '5 años',
-        Descripcion: 'Escuela de Arquitectura especializada en diseño y planificación de edificios.'
+        Matricula: '1200 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Edificación': {
         Nombre: 'E.T.S. de Edificación',
+        Descripcion: 'Escuela de Edificación centrada en técnicas de construcción y gestión de proyectos.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Edificación centrada en técnicas de construcción y gestión de proyectos.'
+        Matricula: '1000 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingeniería Aeronáutica y del Espacio': {
         Nombre: 'E.T.S. de Ingeniería Aeronáutica y del Espacio',
+        Descripcion: 'Escuela de Ingeniería Aeronáutica enfocada en tecnología aeroespacial.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería Aeronáutica enfocada en tecnología aeroespacial.'
+        Matricula: '1300 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingeniería Agronómica, Alimentaría y de Biosistemas': {
         Nombre: 'E.T.S. de Ingeniería Agronómica, Alimentaría y de Biosistemas',
+        Descripcion: 'Escuela de Ingeniería Agronómica que se especializa en alimentos y biosistemas.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería Agronómica que se especializa en alimentos y biosistemas.'
+        Matricula: '1100 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingeniería de Montes, Forestal y del Medio Natural': {
         Nombre: 'E.T.S. de Ingeniería de Montes, Forestal y del Medio Natural',
+        Descripcion: 'Escuela de Ingeniería enfocada en la gestión de recursos forestales y medio ambiente.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería enfocada en la gestión de recursos forestales y medio ambiente.'
+        Matricula: '1050 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingenieros de Caminos, Canales y Puertos': {
         Nombre: 'E.T.S. de Ingenieros de Caminos, Canales y Puertos',
+        Descripcion: 'Escuela de Ingenieros especializada en infraestructuras civiles.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros especializada en infraestructuras civiles.'
+        Matricula: '1200 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S de Ingenieros de Telecomunicación': {
         Nombre: 'E.T.S de Ingenieros de Telecomunicación',
+        Descripcion: 'Escuela de Ingenieros dedicada a la tecnología de telecomunicación.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros dedicada a la tecnología de telecomunicación.'
+        Matricula: '1250 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingenieros Navales': {
         Nombre: 'E.T.S. de Ingenieros Navales',
+        Descripcion: 'Escuela de Ingenieros Navales que se enfoca en la construcción naval y la ingeniería marina.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros Navales que se enfoca en la construcción naval y la ingeniería marina.'
+        Matricula: '1400 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'Facultad de Ciencias de la Actividad Física y del Deporte (INFEF)': {
         Nombre: 'Facultad de Ciencias de la Actividad Física y del Deporte (INFEF)',
+        Descripcion: 'Facultad dedicada a la formación en ciencias del deporte y la actividad física.',
         Duracion: '4 años',
-        Descripcion: 'Facultad dedicada a la formación en ciencias del deporte y la actividad física.'
+        Matricula: '950 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'Rectorado': {
         Nombre: 'Rectorado',
+        Descripcion: 'Sede del Rectorado de la Universidad Politécnica de Madrid.',
         Duracion: 'Varía',
-        Descripcion: 'Sede del Rectorado de la Universidad Politécnica de Madrid.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Instituto de Energía Solar': {
         Nombre: 'Instituto de Energía Solar',
+        Descripcion: 'Instituto de investigación dedicado a la energía solar y las tecnologías renovables.',
         Duracion: 'Varía',
-        Descripcion: 'Instituto de investigación dedicado a la energía solar y las tecnologías renovables.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Instituto de Sistemas Optoelectrónicos y Microtecnología': {
         Nombre: 'Instituto de Sistemas Optoelectrónicos y Microtecnología',
+        Descripcion: 'Instituto de investigación enfocado en sistemas optoelectrónicos y microtecnología.',
         Duracion: 'Varía',
-        Descripcion: 'Instituto de investigación enfocado en sistemas optoelectrónicos y microtecnología.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Instituto de Ciencias de la Educación (ICE)': {
         Nombre: 'Instituto de Ciencias de la Educación (ICE)',
+        Descripcion: 'Instituto dedicado a la investigación en ciencias de la educación y pedagogía.',
         Duracion: 'Varía',
-        Descripcion: 'Instituto dedicado a la investigación en ciencias de la educación y pedagogía.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'E.T.S. de Ingeniería Civil': {
         Nombre: 'E.T.S. de Ingeniería Civil',
+        Descripcion: 'Escuela de Ingeniería Civil enfocada en la planificación y construcción de infraestructuras.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería Civil enfocada en la planificación y construcción de infraestructuras.'
+        Matricula: '1150 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingeniería y Diseño Industrial': {
         Nombre: 'E.T.S. de Ingeniería y Diseño Industrial',
+        Descripcion: 'Escuela de Ingeniería y Diseño Industrial centrada en la innovación y la producción.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería y Diseño Industrial centrada en la innovación y la producción.'
+        Matricula: '1100 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingenieros de Minas y Energía': {
         Nombre: 'E.T.S. de Ingenieros de Minas y Energía',
+        Descripcion: 'Escuela de Ingenieros de Minas y Energía dedicada a la explotación de recursos naturales y energía.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros de Minas y Energía dedicada a la explotación de recursos naturales y energía.'
+        Matricula: '1250 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingenieros Industriales': {
         Nombre: 'E.T.S. de Ingenieros Industriales',
+        Descripcion: 'Escuela de Ingenieros Industriales especializada en procesos de manufactura y producción.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros Industriales especializada en procesos de manufactura y producción.'
+        Matricula: '1200 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'Instituto de Fusión Nuclear': {
         Nombre: 'Instituto de Fusión Nuclear',
+        Descripcion: 'Instituto de investigación en el campo de la fusión nuclear y la energía de fusión.',
         Duracion: 'Varía',
-        Descripcion: 'Instituto de investigación en el campo de la fusión nuclear y la energía de fusión.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'E.T.S. de Ingenieros Informáticos': {
         Nombre: 'E.T.S. de Ingenieros Informáticos',
+        Descripcion: 'Escuela de Ingenieros Informáticos centrada en tecnologías de la información y la informática.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros Informáticos centrada en tecnologías de la información y la informática.'
+        Matricula: '1300 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'Centro de Inv. en Biotecnología y Genómica de Plantas (CBGP)': {
         Nombre: 'Centro de Inv. en Biotecnología y Genómica de Plantas (CBGP)',
+        Descripcion: 'Centro de investigación en biotecnología y genómica vegetal.',
         Duracion: 'Varía',
-        Descripcion: 'Centro de investigación en biotecnología y genómica vegetal.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Centro de Tecnología Biomédica (CTB)': {
         Nombre: 'Centro de Tecnología Biomédica (CTB)',
+        Descripcion: 'Centro de investigación en tecnología biomédica y salud.',
         Duracion: 'Varía',
-        Descripcion: 'Centro de investigación en tecnología biomédica y salud.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Instituto Universitario de Microgravedad "Ignacio Da Riva"': {
         Nombre: 'Instituto Universitario de Microgravedad "Ignacio Da Riva"',
+        Descripcion: 'Instituto dedicado a la investigación en microgravedad y tecnologías espaciales.',
         Duracion: 'Varía',
-        Descripcion: 'Instituto dedicado a la investigación en microgravedad y tecnologías espaciales.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Centro de Domótica Integral (CeDINT-UMP)': {
         Nombre: 'Centro de Domótica Integral (CeDINT-UMP)',
+        Descripcion: 'Centro de investigación en domótica y automatización del hogar.',
         Duracion: 'Varía',
-        Descripcion: 'Centro de investigación en domótica y automatización del hogar.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'E.T.S. de Ingeniería de Sistemas Informáticos': {
         Nombre: 'E.T.S. de Ingeniería de Sistemas Informáticos',
+        Descripcion: 'Escuela de Ingeniería especializada en sistemas informáticos y software.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería especializada en sistemas informáticos y software.'
+        Matricula: '1350 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingeniería de Sistemas Telecomunicación': {
         Nombre: 'E.T.S. de Ingeniería de Sistemas Telecomunicación',
+        Descripcion: 'Escuela de Ingeniería de Telecomunicación centrada en sistemas de comunicación.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingeniería de Telecomunicación centrada en sistemas de comunicación.'
+        Matricula: '1400 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'E.T.S. de Ingenieros en Topografía, Geodesia y Cartografía': {
         Nombre: 'E.T.S. de Ingenieros en Topografía, Geodesia y Cartografía',
+        Descripcion: 'Escuela de Ingenieros especializada en topografía, geodesia y cartografía.',
         Duracion: '4 años',
-        Descripcion: 'Escuela de Ingenieros especializada en topografía, geodesia y cartografía.'
+        Matricula: '1150 € por año',
+        Requisitos: 'Título de bachillerato y prueba de aptitud.',
     },
     'Instituto de Investigación del Automóvil (INSIA)': {
         Nombre: 'Instituto de Investigación del Automóvil (INSIA)',
+        Descripcion: 'Instituto de investigación en tecnología automotriz y seguridad vial.',
         Duracion: 'Varía',
-        Descripcion: 'Instituto de investigación en tecnología automotriz y seguridad vial.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Centro Superior de Diseño de Moda de Madrid (centro adscrito a la UPM)': {
         Nombre: 'Centro Superior de Diseño de Moda de Madrid (centro adscrito a la UPM)',
+        Descripcion: 'Centro de diseño de moda adscrito a la Universidad Politécnica de Madrid.',
         Duracion: 'Varía',
-        Descripcion: 'Centro de diseño de moda adscrito a la Universidad Politécnica de Madrid.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
     'Centro de Inv. en Tecnologías Sw y Sis. Multimedia para la sostenibilidad.': {
         Nombre: 'Centro de Inv. en Tecnologías Sw y Sis. Multimedia para la sostenibilidad.',
+        Descripcion: 'Centro de investigación en tecnologías de software y sistemas multimedia sostenibles.',
         Duracion: 'Varía',
-        Descripcion: 'Centro de investigación en tecnologías de software y sistemas multimedia sostenibles.'
+        Matricula: 'No aplicable',
+        Requisitos: 'No aplicable',
     },
 };
+
+// Puedes continuar agregando información a las carreras existentes según tus necesidades.
+
 
 
 
@@ -255,16 +316,16 @@ function closeChatbot() {
     var aside = document.querySelector('aside');
     var animation = aside.animate([
         // keyframes
-        { transform: 'translate(0)' }, 
-        { transform: 'translate(100vw)'}
-    ], { 
+        { transform: 'translate(0)' },
+        { transform: 'translate(100vw)' }
+    ], {
         // timing options
         duration: 1000,
         iterations: 1,
         fill: 'forwards'
     });
 
-    animation.onfinish = function() {
+    animation.onfinish = function () {
         aside.style.display = 'none';
     };
 }

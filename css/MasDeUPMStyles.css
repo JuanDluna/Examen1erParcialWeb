@@ -1,12 +1,12 @@
-
-#indice a{
+#indice a {
     color: rgb(12, 67, 186);
     font-size: 1.4em;
 }
 
-#collage{
+#collage {
     width: 100%;
 }
+
 .table {
     background-color: transparent;
     border-collapse: collapse;
@@ -21,7 +21,7 @@
     height: 10vw;
 }
 
-.table img{
+.table img {
     margin: 0;
     border: none;
     width: 100%;
@@ -29,9 +29,18 @@
     border-radius: 20px;
 }
 
-.table img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
+table.table img:not([alt="Imagen 4"]):hover {
+    animation: rotate 0.5s ease-in-out forwards;
+}
+
+/* Definir la animación de giro */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -118,6 +127,42 @@ ul {
     text-align: center;
     background-color: white;
     color: #1867b7;
+}
+
+
+.image-border {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    background-image: url('../images/collage4.jpg');
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+		width: 10px;
+		height:10px;
+
+        background-color: #fff;
+    }
+
+    .main-image {
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background-image: url('../images/collage4.jpg');
+        background-size: 300px 300px;
+        background-position: center center;
+        z-index: 2;
+        transition: .5s cubic-bezier(.5, .03, .41, 1);
+    }
+
+    &:hover>.main-image {
+        transform: translate(-15px, -15px);
+        transition: .5s cubic-bezier(.5, .03, .41, 1);
+    }
+
 }
 
 /* Estilo para el reproductor de audio */

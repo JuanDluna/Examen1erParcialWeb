@@ -2,6 +2,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
 main h1 , main>form , main>#tabla-info{
     margin-inline: 18em;
 }

@@ -81,6 +81,7 @@
             <li><a href="registro.html">Registro de solicitud de ingreso</a></li>
         </ul>
     </nav>
+    
     <main>
 
         <div>
@@ -204,22 +205,22 @@
     </footer>
 
     <script>function closeChatbot() {
-        var aside = document.querySelector('aside');
-        var animation = aside.animate([
-            // keyframes
-            { transform: 'translate(0)' }, 
-            { transform: 'translate(100vw)'}
-        ], { 
-            // timing options
-            duration: 1000,
-            iterations: 1,
-            fill: 'forwards'
-        });
-    
-        animation.onfinish = function() {
-            aside.style.display = 'none';
-        };
-    }</script>
+            var aside = document.querySelector('aside');
+            var animation = aside.animate([
+                // keyframes
+                { transform: 'translate(0)' },
+                { transform: 'translate(100vw)' }
+            ], {
+                // timing options
+                duration: 1000,
+                iterations: 1,
+                fill: 'forwards'
+            });
+
+            animation.onfinish = function () {
+                aside.style.display = 'none';
+            };
+        }</script>
 
 </body>
 

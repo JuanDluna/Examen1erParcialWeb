@@ -73,17 +73,20 @@ body {
 }
 
 header,
-footer {
+footer,
+nav {
     width: 100%;
     font-family: 'Lato', sans-serif;
     color: white;
 }
 
+
+
 body>nav {
     margin-inline: 30em;
 }
 
-header>div>div{
+header>div>div {
     margin-inline: 18em;
 }
 
@@ -202,7 +205,7 @@ footer {
 
 }
 
-footer>div>div{
+footer>div>div {
     margin-inline: 18em;
 }
 
@@ -288,20 +291,20 @@ aside {
     right: 2em;
 }
 
-aside>button{
+aside>button {
     border: none;
     float: right;
     cursor: pointer;
     background-color: transparent;
 }
 
-aside span{
+aside span {
     color: black;
 }
 
 aside>p {
     transform: translateX(200%);
-    position:relative;
+    position: relative;
     right: 2em;
     font-size: 0.7em;
     padding: 5px;
