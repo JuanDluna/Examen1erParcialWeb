@@ -256,21 +256,15 @@ const informacionCarreras = {
 
 
 
-// Evento que se dispara cuando se selecciona un campus
 campusSelect.addEventListener('change', actualizarCarreras);
-
-// Evento que se dispara cuando se selecciona una carrera
 carreraInput.addEventListener('input', mostrarInformacionCarrera);
 
-// Función para actualizar las opciones del datalist
 function actualizarCarreras() {
     const campusSeleccionado = campusSelect.value;
     const carreras = carrerasPorCampus[campusSeleccionado] || [];
 
-    // Limpiar las opciones anteriores
     carrerasDatalist.innerHTML = '';
 
-    // Llenar el datalist con las nuevas opciones
     carreras.forEach(carrera => {
         const opcion = document.createElement('option');
         opcion.value = carrera;
@@ -278,16 +272,13 @@ function actualizarCarreras() {
     });
 }
 
-// Función para mostrar la información de la carrera
 function mostrarInformacionCarrera() {
     const NombreCarrera = carreraInput.value;
     const datosCarrera = informacionCarreras[NombreCarrera];
 
-    // Limpiar la tabla
     tablaInfo.innerHTML = '';
 
     if (datosCarrera) {
-        // Crear filas de la tabla con información de la carrera
         for (const propiedad in datosCarrera) {
             if (datosCarrera.hasOwnProperty(propiedad)) {
                 const fila = document.createElement('tr');
@@ -302,14 +293,12 @@ function mostrarInformacionCarrera() {
             }
         }
     } else {
-        // Mostrar un mensaje de error si la carrera no se encuentra
         tablaInfo.innerHTML = '<tr><td colspan="2">Carrera no encontrada</td></tr>';
     }
 }
 
 
 
-// Inicialmente, cargar las opciones para el primer campus
 actualizarCarreras();
 
 function closeChatbot() {

@@ -303,7 +303,7 @@ aside span {
 }
 
 aside>p {
-    transform: translateX(200%);
+    color: white;
     position: relative;
     right: 2em;
     font-size: 0.7em;

@@ -7,11 +7,12 @@
     <title>Busqueda de carreras</title>
     <script src="https://kit.fontawesome.com/d4b8af33ac.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/institucional.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/facultadStyles.css">
     <link rel="stylesheet" href="css/commonStyles.css">
+    <link rel="stylesheet" href="css/facultadStyles.css">
 </head>
 
 <body>
+
 
     <aside class="animate__animated animate__bounce">
         <button onclick="closeChatbot()"><span class="fa-solid fa-xmark"></span></button>
@@ -30,7 +31,7 @@
                     <a href="index.html">
                         <img src="images/institucional.png" alt="Universidad Politecnica de Madrid" class="img" />
                     </a>
-                    <h1>Universidad<br>Politécnica de Madrid</h1>
+                    <h1 class="titulo-universidad">Universidad<br />Politécnica de Madrid</h1>
                 </div>
 
                 <div class="Menu">
@@ -38,19 +39,20 @@
                         <nav class="row">
                             <ul>
                                 <li>
-                                    <a href="https://www.upm.es/Estudiantes/Estudios_Titulaciones">
-                                        Estudios y Titulaciones </a>
+                                    <a href="https://www.upm.es/Estudiantes/Estudios_Titulaciones" class="menu-titles">
+                                        Estudios y Titulaciones
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.upm.es/UPM/SalaPrensa">
-                                        Sala de prensa </a>
+                                    <a href="https://www.upm.es/UPM/SalaPrensa" class="menu-titles">
+                                        Sala de prensa
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.upm.es/internacional">
-                                        English </a>
+                                    <a href="https://www.upm.es/internacional" class="menu-titles"> English </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.upm.es/internacional">
+                                    <a href="https://www.upm.es/internacional" class="menu-titles">
                                         Sede Electrónica</a>
                                 </li>
                             </ul>
@@ -81,12 +83,22 @@
         </ul>
     </nav>
 
+
     <main>
         <div class="titulo">
             <h1>Selecciona un Campus y una Carrera</h1>
         </div>
+    
+        <form class="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-        <form class="formsList">
+            <label for="telefono">Número telefónico:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+    
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo" name="correo" required>
+    
             <div class="select">
                 <label for="campus">Selecciona un Campus:</label>
                 <select id="campus" name="campus">
@@ -96,32 +108,34 @@
                     <option value="Campus Sur">Campus Sur</option>
                 </select>
             </div>
-
+    
             <div class="datalist">
                 <label for="carrera">Selecciona una Carrera:</label>
                 <input id="carrera" name="carrera" list="carreras">
                 <datalist id="carreras"></datalist>
             </div>
+    
+    
+            <button type="submit">Enviar</button>
         </form>
-
+    
         <div class="tabla-info">
+            <h2>Se enviarán novedades de la carrera</h2> 
             <h2>Información de Carrera:</h2>
             <table id="tabla-info">
-                <!-- Aquí se mostrará la información de la carrera seleccionada -->
             </table>
         </div>
     </main>
-
-
+    
 
     <footer>
         <div class="UPM_Domains">
             <div class="UPM_Sites">
                 <a href="https://www.upm.es/politecnica_virtual/">
-                    <img src="images/icon_pv.png" alt="Politecnica Virtual">
+                    <img src="images/icon_pv.png" alt="Politecnica Virtual" />
                 </a>
                 <a href="https://drive.upm.es/index.php/login">
-                    <img src="images/icon_UPMdrive.png" alt="UPMDrive">
+                    <img src="images/icon_UPMdrive.png" alt="UPMDrive" />
                 </a>
             </div>
             <div class="socialMedia">
@@ -138,7 +152,6 @@
                 <a href="https://www.instagram.com/somosupm/">
                     <span class="fa fa-instagram"></span>
                 </a>
-
             </div>
         </div>
 
@@ -147,21 +160,30 @@
                 <div class="contactList">
                     <ul>
                         <li>
-                            <a href="https://www.upm.es/contacto"> Contacto / Directorio </a>
+                            <a href="https://www.upm.es/contacto">
+                                Contacto / Directorio
+                            </a>
                         </li>
                         <li>
-                            <a href="https://transparencia.upm.es/"> Portal de Transparencia </a>
+                            <a href="https://transparencia.upm.es/">
+                                Portal de Transparencia
+                            </a>
                         </li>
                         <li>
-                            <a href="https://sede.upm.es/licitaciones"> Perfil de Contratante </a>
+                            <a href="https://sede.upm.es/licitaciones">
+                                Perfil de Contratante
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.upm.es/Portal_inv"> Portal del Investigador </a>
+                            <a href="https://www.upm.es/Portal_inv">
+                                Portal del Investigador
+                            </a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="https://www.upm.es/UPM/Calidad/BQSF"> Quejas/Sugerencias/Felicitaciones
+                            <a href="https://www.upm.es/UPM/Calidad/BQSF">
+                                Quejas/Sugerencias/Felicitaciones
                             </a>
                         </li>
                         <li>
@@ -174,18 +196,18 @@
                 </div>
                 <div class="sponsorsImages">
                     <a href="http://www.crue.org/">
-                        <img src="images/crue20.png" alt="Crue Universidades Españolas" title="Crue">
+                        <img src="images/crue20.png" alt="Crue Universidades Españolas" title="Crue" />
                     </a>
                     <a href="http://www.universia.es">
-                        <img src="images/universia15.png" alt="Universia" title="Universia">
+                        <img src="images/universia15.png" alt="Universia" title="Universia" />
                     </a>
-                    <br>
+                    <br />
                     <a href="https://www.upm.es/UPM/PRTR">
-                        <img src="images/prtr-02.png" alt="prtr" title="prtr">
+                        <img src="images/prtr-02.png" alt="prtr" title="prtr" />
                     </a>
-                    <br>
+                    <br />
                     <a href="">
-                        <img src="images/hrs4r.png" alt="" title="hsr4r">
+                        <img src="images/hrs4r.png" alt="" title="hsr4r" />
                     </a>
                 </div>
             </div>
@@ -193,10 +215,9 @@
                 <p>Universidad Politécnica de Madrid &copy; 2023</p>
             </div>
         </div>
-
     </footer>
-    <script src="js/facultades.js"></script>
 
+    <script src="js/facultades.js"></script>
 </body>
 
 </html>
